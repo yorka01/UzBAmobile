@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg_form.css">
+
+</head>
+<body>
+
+    <!-- Кнопка назад -->
+    <button class="back-button" onclick="window.history.back()">⬅︎</button>
+
+    <!-- Контейнер формы регистрации -->
+    <div class="registration-container">
+        <form class="registration-form" id="registrationForm">
+            <h1>Регистрация</h1>
+            
+            <!-- Поле для имени пользователя -->
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
+            
+            <!-- Поле для email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            
+            <!-- Поле для пароля -->
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            
+            <!-- Подтверждение пароля -->
+            <label for="confirm-password">Подтвердите пароль</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Подтвердите пароль" required>
+
+            <!-- Кнопка для отправки формы -->
+            <button type="submit">Зарегистрироваться</button>
+            
+            <!-- Ссылки для входа и восстановления пароля -->
+            <div class="auth-links">
+                <p><a href="#">Уже есть аккаунт? Войти</a></p>
+                <p><a href="#">Забыли пароль?</a></p>
+            </div>
+
+            <!-- Блок альтернативного входа -->
+            <div class="alternative-login">
+                <p>Или войдите с помощью:</p>
+                <button class="social-login-btn" id="google-login">Google</button>
+                <button class="social-login-btn" id="facebook-login">Facebook</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+

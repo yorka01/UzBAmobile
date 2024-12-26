@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Players</title>
+    <link href="top_players.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="main-container">
+        <header class="header">
+                <!-- Кнопка назад -->
+        <button class="back-button" onclick="window.history.back()">⬅︎</button>
+            <h1 class="header-title">Top Players 2024:</h1>
+        </header>
+
+        <!-- Player table -->
+        <div class="player-section">
+            <table class="player-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Player</th>
+                        <th>Height (cm)</th>
+                        <th>Weight (kg)</th>
+                        <th>Points per Game</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="player-info">
+                            <img src="image.png" alt="Player 1" class="player-photo">
+                            <span>Isaev Yorkinjon</span>
+                        </td>
+                        <td>195</td>
+                        <td>85</td>
+                        <td>Main</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="player-info">
+                            <img src="amal.png" alt="Player 2" class="player-photo">
+                            <span>Amal Mursaev</span>
+                        </td>
+                        <td>175</td>
+                        <td>70</td>
+                        <td>Шпак</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="player-info">
+                            <img src="yura.png" alt="Player 3" class="player-photo">
+                            <span>Yun Yuriy</span>
+                        </td>
+                        <td>168</td>
+                        <td>65</td>
+                        <td>спина болит</td>
+                    </tr>
+                    <!-- Top 10 players (initially hidden) -->
+                    <tr class="hidden">
+                        <td>4</td>
+                        <td class="player-info">
+                            <img src="fazik.jpg" alt="Player 4" class="player-photo">
+                            <span>Avazov Fazik</span>
+                        </td>
+                        <td>175</td>
+                        <td>60</td>
+                        <td>бездарно травмировался</td>
+                    </tr>
+                    <tr class="hidden">
+                        <td>5</td>
+                        <td class="player-info">
+                            <img src="енфт.jpg" alt="Player 5" class="player-photo">
+                            <span>Tyan Aleksandr</span>
+                        </td>
+                        <td>184</td>
+                        <td>80</td>
+                        <td>водонос тренера</td>
+                    </tr>
+                </tr>
+                <!-- Top 10 players (initially hidden) -->
+                <tr class="hidden">
+                    <td>4</td>
+                    <td class="player-info">
+                        <img src="jamal.jpg" alt="Player 4" class="player-photo">
+                        <span>Jamal</span>
+                    </td>
+                    <td>180</td>
+                    <td>77</td>
+                    <td>подозреваемый</td>
+                </tr>
+                <tr class="hidden">
+                    <td>5</td>
+                    <td class="player-info">
+                        <img src="coy.jpg" alt="Player 5" class="player-photo">
+                        <span>Tsoy SerGAY</span>
+                    </td>
+                    <td>168</td>
+                    <td>45</td>
+                    <td>на замене</td>
+                </tr>
+                <tr class="hidden">
+                    <td>6</td>
+                    <td class="player-info">
+                        <img src="iqbol.jpg" alt="Player 6" class="player-photo">
+                        <span>Jurabaev Iqbol</span>
+                    </td>
+                    <td>175</td>
+                    <td>60</td>
+                    <td>Shoker</td>
+                </tr>
+                <tr class="hidden">
+                    <td>7</td>
+                    <td class="player-info">
+                        <img src="artur.jpg" alt="Player 7" class="player-photo">
+                        <span>Li Arthur</span>
+                    </td>
+                    <td>178</td>
+                    <td>55</td>
+                    <td>он чёрный: Ꝏ </td>
+                </tr>
+                <tr class="hidden">
+                    <td>8</td>
+                    <td class="player-info">
+                        <img src="sabi.jpg" alt="Player 8" class="player-photo">
+                        <span>(W)Sabina Miftaxova</span>
+                    </td>
+                    <td>163</td>
+                    <td>52</td>
+                    <td>14.1</td>
+                </tr>
+                <tr class="hidden">
+                    <td>9</td>
+                    <td class="player-info">
+                        <img src="kobe.jpg" alt="Player 9" class="player-photo">
+                        <span>Kobe Brynt</span>
+                    </td>
+                    <td>198</td>
+                    <td>90</td>
+                    <td>Мёрт</td>
+                </tr>
+                <tr class="hidden">
+                    <td>10</td>
+                    <td class="player-info">
+                        <img src="brone.jpg" alt="Player 10" class="player-photo">
+                        <span>Lebrone James</span>
+                    </td>
+                    <td>206</td>
+                    <td>102</td>
+                    <td>32.2(слабо играет)</td>
+                    <!-- Add more players for the top 10 -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Button to show Top 10 players -->
+        <button id="show-more-btn">Show Top 10</button>
+
+        <!-- Winner of 2024 -->
+        <div class="winner">
+            <h2>Winner of 2023: The Most "Жидкий" Player</h2>
+            <img src="YURA.jpg" alt="Winner Photo">
+            <p>Name: Yun Yuriy</p>
+            <p>Age: 18</p>
+            <p>Немного о нём: Показывал самую жидкую игру в миру.При любой малейшей стычке звонил своим браткам и начинали разборки прям на паркете, а сам он прятался за братками )</p>
+        </div>
+    </div>
+
+    <script>
+        // Show or hide Top 10 players when button is clicked
+        document.getElementById('show-more-btn').addEventListener('click', function() {
+            const hiddenRows = document.querySelectorAll('.player-table tr.hidden');
+            hiddenRows.forEach(row => {
+                // Toggle display style to show/hide the rows
+                row.style.display = (row.style.display === 'none' || row.style.display === '') ? 'table-row' : 'none';
+            });
+            
+            // Change button text
+            this.textContent = this.textContent === 'Show Top 10' ? 'Hide Top 10' : 'Show Top 10';
+        });
+    </script>
+</body>
+</html>

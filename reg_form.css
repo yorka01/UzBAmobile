@@ -1,0 +1,210 @@
+/* Базовые стили для страницы */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Тёмно-серый фон */
+    color: #ffffff; /* Белый текст */
+}
+
+/* Контейнер для формы */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Форма */
+.registration-form {
+    background-color: #1f1f1f; /* Чёрный фон формы */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Заголовок формы */
+.registration-form h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: #f9a825;
+}
+
+/* Метки */
+.registration-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #f9a825; /* Светло-серый текст */
+}
+
+/* Поля ввода */
+.registration-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444444; /* Тёмно-серая рамка */
+    border-radius: 5px;
+    background-color: #2c2c2c; /* Тёмно-серый фон */
+    color: #ffffff; /* Белый текст */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.registration-form input::placeholder {
+    color: #aaaaaa; /* Светло-серый текст для placeholder */
+}
+
+/* Кнопка отправки */
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #444444; /* Тёмно-серый фон кнопки */
+    color: #f9a825; /* Белый текст кнопки */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+    background-color: #666666; /* Более светлый серый при наведении */
+}
+
+/* Анимация фокуса */
+.registration-form input:focus {
+    outline: none;
+    border-color: #888888; /* Серый цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Стили для кнопки назад */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: #f9a825;
+    border: none;
+    border-radius: 50%; /* Круглая форма */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #888888; /* Изменение фона при наведении */
+}
+
+/* Блок альтернативного входа */
+.alternative-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alternative-login p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #f9a825; /* Тот же светло-серый цвет для текста */
+}
+
+.social-login-btn {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #444444;
+    transition: background-color 0.3s ease;
+}
+
+/* Кнопка для входа через Google */
+.social-login-btn#google-login {
+    background-color: #db4437;
+    color: white;
+}
+
+.social-login-btn#google-login:hover {
+    background-color: #c1351d;
+}
+
+/* Кнопка для входа через Facebook */
+.social-login-btn#facebook-login {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-login-btn#facebook-login:hover {
+    background-color: #2d4373;
+}
+
+/* Ссылки под формой */
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-links a {
+    font-size: 14px;
+    color: #f9a825;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .registration-form {
+        padding: 20px; /* Уменьшаем отступы на мобильных устройствах */
+        max-width: 100%; /* Максимальная ширина формы на мобильных */
+    }
+
+    .registration-form h1 {
+        font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+    }
+
+    .registration-form label {
+        font-size: 12px; /* Меньше размер шрифта для меток */
+    }
+
+    .registration-form input {
+        font-size: 14px; /* Уменьшаем размер шрифта для полей ввода */
+        padding: 10px; /* Уменьшаем отступы в полях ввода */
+    }
+
+    .registration-form button {
+        font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+        padding: 10px; /* Уменьшаем отступы кнопки */
+    }
+
+    /* Кнопка назад */
+    .back-button {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    /* Социальные кнопки */
+    .social-login-btn {
+        padding: 10px;
+        font-size: 14px; /* Уменьшаем размер шрифта для кнопок */
+    }
+
+    .auth-links a {
+        font-size: 12px; /* Уменьшаем размер шрифта для ссылок */
+    }
+}
